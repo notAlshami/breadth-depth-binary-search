@@ -1,0 +1,391 @@
+html{
+    font-size: 5vmin;
+}
+
+body{
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+.treecontainer{
+    font-size: 1.5vmin;
+    position: absolute;
+    width: 48vw;
+    height:48vw;
+    max-width: 50em;
+    max-height: 50em;
+    right:2vw;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.binary_tree{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background: wheat;
+    z-index: 0;
+}
+
+/* default node  */
+.node{
+    position: absolute;
+    background-color: white;
+    border: 0.1rem solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color,color;
+     transition-duration: 0.335s;
+
+    
+}
+.node::before{
+    content: "";
+    position: absolute;
+    width: 5%;
+    transform-origin: bottom;
+    background: black;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* root node */
+.node:nth-child(1){
+    font-size: 3em;
+    width: 12%;
+    height: 12%;
+    left:50%;
+    transform: translate(-50%);
+  }
+  .node:nth-child(1)::before{
+    display: none;
+
+}
+
+/* node descretion */
+.node:nth-child(2){
+    width: 10%;
+    height: 10%;
+    font-size: 2.75em;
+    top:25%;
+    right:18.5%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(2)::before{
+   
+    height: 300%;
+    top:-250%;
+    transform: rotateZ(-45deg); 
+}
+
+
+.node:nth-child(3){
+    width: 10%;
+    height: 10%;
+    font-size: 2.75em;
+    top:25%;
+    left:18.5%;
+
+}
+.node:nth-child(3)::before{
+   
+    height: 300%;
+    top:-250%;
+    transform: rotateZ(45deg); 
+}
+
+
+.node:nth-child(16){
+    width: 10%;
+    height: 10%;
+    font-size: 2.75em;
+    top:25%;
+    left:44.5%;
+}
+.node:nth-child(16)::before{
+   
+    height: 300%;
+    top:-250%;
+     
+}
+
+
+.node:nth-child(16)::after{
+    content: "";
+    position: absolute;
+    width: 4%;
+    height: 300%;
+    transform-origin: top;
+    background-color: var(--colorrBefore);
+    z-index: -1;
+    pointer-events: none;
+    bottom:-250%;
+    transform: rotateZ(-27.5deg); 
+}
+
+
+.node:nth-child(4){
+    width: 8%;
+    height: 8%;
+    font-size: 2.50em;
+    top:50%;
+    right:7%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(4)::before{
+    
+    height: 300%;
+    top:-250%;
+    transform: rotateZ(-27.5deg); 
+}
+
+
+.node:nth-child(5){
+    width: 8%;
+    height: 8%;
+    font-size: 2.50em;
+    top:50%;
+    right:32%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(5)::before{
+    height: 300%;
+    top:-250%;
+    background-color: var(--colorrBefore);
+    transform: rotateZ(27.5deg); 
+}
+
+.node:nth-child(6){
+    width: 8%;
+    height: 8%;
+    font-size: 2.50em;
+    top:50%;
+    left:32%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(6)::before{
+    height: 300%;
+    top:-250%;
+    transform: rotateZ(-27.5deg); 
+}
+
+.node:nth-child(7){
+    width: 8%;
+    height: 8%;
+    font-size: 2.50em;
+    top:50%;
+    left:7%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(7)::before{
+    height: 300%;
+    top:-250%;
+    transform: rotateZ(27.5deg); 
+}
+
+
+.node:nth-child(8){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    right:0;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(8)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(-22deg); 
+}
+
+
+.node:nth-child(9){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    right:15%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(9)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(22deg); 
+}
+
+
+.node:nth-child(10){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    right:25%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(10)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(-22deg); 
+}
+
+
+.node:nth-child(11){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    right:40%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(11)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(22deg); 
+}
+
+
+.node:nth-child(12){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    left:40%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(12)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(-22deg); 
+}
+
+
+.node:nth-child(13){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    left:25%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(13)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(22deg); 
+}
+
+
+.node:nth-child(14){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    left:15%;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(14)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(-22deg); 
+}
+
+
+.node:nth-child(15){
+    width: 7%;
+    height: 7%;
+    font-size: 2em;
+    top:70%;
+    left:0;
+    transform: translate(-50%,-50%,0);
+}
+.node:nth-child(15)::before{
+    height: 350%;
+    top:-300%;
+    transform: rotateZ(22deg); 
+}
+
+.node:hover{
+    background: gray;
+    color:black
+}
+
+
+.textcontainer{
+    font-size: 1.5vmin;
+    position: relative;
+    width: 48vw;
+    height: 60vh;
+    max-width: 80em;
+    left: 2vw;
+    top:50%;
+    transform: translate(0,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+p{
+    margin: 0;
+}
+.text{
+
+    text-align: center;
+    font-size: 4em;
+}
+.textalog{
+
+    text-align: center;
+    font-size: 3em;
+}
+.display_none{
+    display: none;
+}
+.visited{
+    background-color: gray;
+}
+.done{
+    background-color: black;
+    color:white;
+}
+
+.interactive{
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.2em;
+}
+.but{
+    text-align: center;
+    padding: 0.5em 2em;
+    background-color: wheat;
+    border: 0.2em solid black;
+    font-size: 1.5em;
+}
+.but:hover{
+    background-color: rgb(255, 210, 126);
+}
+
+.algotype{
+
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.2em;
+    font-size: 1.5em;
+}
+#radi{
+    accent-color: black;
+}
