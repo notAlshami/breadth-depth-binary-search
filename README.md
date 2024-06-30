@@ -6,7 +6,6 @@ This project demonstrates how to traverse a Binary Search Tree (BST) using Bread
 
 ## Features
 
-- **Node Creation**: Nodes are created and linked to form a BST.
 - **BFS and DFS Traversal**: Supports traversal using both BFS and DFS.
 - **Interactive Visualization**: Step through the traversal process interactively.
 
