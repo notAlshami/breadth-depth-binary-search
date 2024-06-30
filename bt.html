@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo</title>
+    <link rel="stylesheet" href="bt.css">
+    <script src="bt.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="textcontainer">
+            <p class="textalog">Breadth: First In First Out</p>
+            <p class="text">[Select a starting node]</p>
+            <div class="interactive">
+                <button class="but next display_none" onclick="next()">next</button>
+                <button class="but start" onclick="start()">start</button>
+                <button class="but reset" onclick="reset()">reset</button>
+            </div>
+            <div class="algotype">
+                <input type="radio" id="radi" name="algo" value="d" onclick="setAlgoText(this)"><span>Depth</span>
+                <input type="radio" id="radi" name="algo" value="b" onclick="setAlgoText(this)" checked><span>Breadth</span>
+            </div>
+        </div>
+        <div class="treecontainer">
+            <section class="binary_tree">
+                <div class="node A" onclick="startNode(A)">A</div>
+                <div class="node B" onclick="startNode(B)">B</div>
+                <div class="node C" onclick="startNode(C)">C</div>
+                <div class="node D" onclick="startNode(D)">D</div>
+                <div class="node E" onclick="startNode(E)">E</div>
+                <div class="node F" onclick="startNode(F)">F</div>
+                <div class="node G" onclick="startNode(G)">G</div>
+                <div class="node H" onclick="startNode(H)">H</div>
+                <div class="node I" onclick="startNode(I)">I</div>
+                <div class="node J" onclick="startNode(J)">J</div>
+                <div class="node K" onclick="startNode(K)">K</div>
+                <div class="node L" onclick="startNode(L)">L</div>
+                <div class="node M" onclick="startNode(M)">M</div>
+                <div class="node N" onclick="startNode(N)">N</div>
+                <div class="node O" onclick="startNode(O)">O</div>
+                <div class="node P" onclick="startNode(P)">P</div>
+            </section>
+        </div>
+       
+    </main>
+</body>
+</html>
